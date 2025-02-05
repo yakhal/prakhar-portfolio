@@ -57,12 +57,14 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Software engineer and Architect</>,
   subline: (
     <>
-      I'm Prakhar, a design engineer at <InlineCode>FLY</InlineCode>, where I
-      craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I’m Prakhar, a Senior Software Engineer at <InlineCode>VSERV AudiencePro</InlineCode>. <br/>I spend my
+      days crafting robust software and refining user experiences—because life’s
+      too short for bad UX. By night, I dive into cool projects and explore the
+      latest in tech, turning caffeine into code and challenges into
+      innovations.
     </>
   ),
 };
