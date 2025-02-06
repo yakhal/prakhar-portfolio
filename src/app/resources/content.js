@@ -60,11 +60,11 @@ const home = {
   headline: <>Software engineer and Architect</>,
   subline: (
     <>
-      I’m Prakhar, a Senior Software Engineer at <InlineCode>VSERV AudiencePro</InlineCode>. <br/>I spend my
-      days crafting robust software and refining user experiences—because life’s
-      too short for bad UX. By night, I dive into cool projects and explore the
-      latest in tech, turning caffeine into code and challenges into
-      innovations.
+      I’m Prakhar, a Senior Software Engineer at{" "}
+      <InlineCode>VSERV AudiencePro</InlineCode>. <br />I spend my days crafting
+      robust software and refining user experiences—because life’s too short for
+      bad UX. By night, I dive into cool projects and explore the latest in
+      tech, turning caffeine into code and challenges into innovations.
     </>
   ),
 };
@@ -102,28 +102,46 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "VSERV",
+        company: "VSERV AudiencePro",
         timeframe: "2023 - Present",
         role: "Senior Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
+            <strong>Pioneered End-to-End UI Development</strong>: Spearheaded
+            the full lifecycle creation of critical modules—including Campaign
+            Manager, Insights, Analytics, Marketer Manager, and both
+            Portals—resulting in scalable, high-performance React applications
+            that set a new benchmark for the AudiencePro product.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
+            <strong>Enhanced Security & User Experience</strong>: Achieved
+            significant improvements in platform security and usability by
+            integrating Keycloak with custom theming and Hotjar analytics,
+            elevating the overall user engagement and trust.
+          </>,
+          <>
+            <strong>Delivered Complex, Market-Driven Features</strong>:
+            Successfully implemented advanced functionalities such as
+            multi-country support, audience deactivation, Snapchat activation,
+            and dynamic audience recommendations, expanding the product's
+            capabilities and market reach.
+          </>,
+          <>
+            <strong>Optimized Performance & Efficiency</strong>: Improved user
+            experience by optimizing page load times, caching, and adopting the
+            Vite bundler for faster build times—leading to notably quicker UI
+            load speeds and a more responsive application.
+          </>,
+          <>
+            <strong>Elevated Code Quality & Collaboration</strong>:
+            Significantly reduced code volume and enhanced maintainability by
+            refactoring components, optimizing hooks and API calls, and adhering
+            to ECMAScript standards, while proactively collaborating with UX,
+            QC, Product, and Backend teams to ensure alignment with evolving
+            business objectives.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
         company: "Tata Consultancy Services",
@@ -131,12 +149,22 @@ const about = {
         role: "Software Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            <strong>Global Impact</strong>: Contributed to a high-stakes
+            e-commerce platform for a leading healthcare MNC, enabling the
+            worldwide sale of life-critical products and enhancing patient care
+            on a global scale.
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            <strong>Performance & Quality Leadership</strong>: Developed
+            innovative application features and proactively maintained the
+            codebase, significantly reducing defects and boosting overall
+            performance and reliability.
+          </>,
+          <>
+            <strong>Seamless Deployment Expertise</strong>: Streamlined the
+            promotion of code from development to production, enabling smooth
+            and reliable deployments that minimized downtime and maximized
+            operational efficiency.
           </>,
         ],
         images: [],
@@ -148,12 +176,16 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Mumbai",
-        description: <>Bachelor's in Computer Science.</>,
+        name: "University of Mumbai (B.Sc. Computer Science)",
+        description: (
+          <>Passed with distinction, with an average CGPA of 8.9/10. </>
+        ),
       },
       {
-        name: "Nirmala Memorial Foundation College",
-        description: <>12th Grade (Science).</>,
+        name: "Nirmala Memorial Foundation College (12th)",
+        description: (
+          <>Passed with distinction, with an average score of 75%.</>
+        ),
       },
     ],
   },
@@ -166,11 +198,62 @@ const about = {
         description: (
           <>Building next gen apps with Next.js + Once UI + Supabase.</>
         ),
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
             alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+
+      {
+        title: "React",
+        description: (
+          <>
+            Crafting efficient, scalable UI components using modern React
+            paradigms.
+          </>
+        ),
+        images: [
+          {
+            src: "/images/skills/react.jpg",
+            alt: "Redux",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Tanstack Query",
+        description: (
+          <>
+            Effortlessly manage data fetching, caching, and synchronization to
+            build robust, reactive applications with seamless real-time updates.
+          </>
+        ),
+        images: [
+          {
+            src: "/images/skills/tanstack.jpg",
+            alt: "Redux",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Vite",
+        description: (
+          <>
+            Boosting development speed with lightning-fast build times and
+            optimized workflows.
+          </>
+        ),
+        images: [
+          {
+            src: "/images/skills/vite.png",
+            alt: "Redux",
             width: 16,
             height: 9,
           },
@@ -181,7 +264,6 @@ const about = {
         description: (
           <>Able to prototype in Figma with Once UI with unnatural speed.</>
         ),
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-02.jpg",
@@ -192,6 +274,57 @@ const about = {
           {
             src: "/images/projects/project-01/cover-03.jpg",
             alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Jest & React Testing Library",
+        description: (
+          <>
+            Ensuring robust functionality through comprehensive unit and
+            integration testing.
+          </>
+        ),
+        images: [
+          {
+            src: "/images/skills/rtl.jpg",
+            alt: "Redux",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Keycloak",
+        description: (
+          <>
+            Implementing secure authentication with customizable theming for
+            enhanced UX.
+          </>
+        ),
+        images: [
+          {
+            src: "/images/skills/keycloak.png",
+            alt: "Redux",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Hotjar",
+        description: (
+          <>
+            Gaining actionable insights to optimize user experience through
+            behavior analytics.
+          </>
+        ),
+        images: [
+          {
+            src: "/images/skills/hotjar.jpg",
+            alt: "Redux",
             width: 16,
             height: 9,
           },
