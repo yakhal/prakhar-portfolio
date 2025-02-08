@@ -8,8 +8,6 @@ const withMDX = mdx({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: "export",
-  basePath: "/prakhar-portfolio",
   pageExtensions: ["ts", "tsx", "md", "mdx"],
 };
 
