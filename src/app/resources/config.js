@@ -3,7 +3,7 @@ const baseURL = "yakhal.github.io";
 const routes = {
   "/": true,
   "/about": true,
-  "/work": false,
+  "/work": true,
   "/blog": true,
   "/gallery": true,
 };
@@ -63,8 +63,8 @@ const effects = {
 };
 
 const display = {
-  location: false,
-  time: false,
+  location: true,
+  time: true,
 };
 
 const mailchimp = {
